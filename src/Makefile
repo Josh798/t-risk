@@ -1,7 +1,7 @@
 all: risk
 
 risk: risk.o printEmptyMap.o game_components.h
-	gcc risk.o printEmptyMap.o -o risk -lncursesw
+	gcc risk.o printEmptyMap.o -o ../bin/risk -lncursesw
 
 risk.o: Risk.c kernel.h game_components.h
 	gcc -c -o risk.o Risk.c -lncursesw
