@@ -5,3 +5,4 @@ t-risk:
 
 clean:
 	rm -rf *.o
+	cd src && $(MAKE) clean

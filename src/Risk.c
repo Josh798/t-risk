@@ -14,8 +14,11 @@
 int main() {
     setlocale(LC_ALL, "");
     initscr();
+    raw();
     printEmptyMap();
-    getchar();
+    char* str = "Hello, world!";
+    promptStr(&str, 35);
+    getch();
     endwin();
-    refresh();
+    return 0;
 }
