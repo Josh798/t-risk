@@ -1,5 +1,8 @@
-typedef struct Player {
-    char playerNum;
+#ifndef GAME_COMPONENTS_H
+#define GAME_COMPONENTS_H
+
+typedef struct player {
+    int playerNum;
     char *name; // Use malloc, then assign the pointer it returns to name
     struct territory* territories;
     struct region* continents[5];
@@ -18,6 +21,8 @@ typedef struct territory {
 } Territory;
 
 typedef struct game {
-	char numberOfPlayers;
-	int somethingElse;
+	int numberOfPlayers;
+	Player* players;
 } Game;
+
+#endif
