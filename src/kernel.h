@@ -57,6 +57,11 @@ void initializeTerritories();
 int parseElement(char*, char*, int);
 
 /*
- * Updates the count of troops in a territory. This updates the screen and the amount if troops in the game.
+ * Updates the count of troops in a territory. This updates the screen and the amount of troops in the game.
  */
 void updateTroopCount(Territory*, int);
+
+/*
+ * Updates the displayed troop count for the given territory on the map.
+ */
+void refreshTroopCount(Territory*);

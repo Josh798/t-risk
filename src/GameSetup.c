@@ -17,7 +17,10 @@ void setupGame() {
 	nameAndNumberPlayers(game->players, game->numberOfPlayers);
 	initializeTerritories();
 	Territory* t = *(game->territories);
-	updateTroopCount(t, 0);
+	int i;
+	for (i = 0; i < 42; i++) {
+		refreshTroopCount(*(game->territories + i));
+	}
 }
 
 int setupPlayers() {
@@ -56,6 +59,7 @@ void initializeTerritories() {
 		t->id = atoi(id);
 		t->xcoord = atoi(xcoord);
 		t->ycoord = atoi(ycoord);
+		t->troopCount = 0;
 		*(game->territories + i) = t;
 		printMessage(msg);
 		fgetc(territoriesFile); // Read in the delimiting character \n
