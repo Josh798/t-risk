@@ -24,9 +24,9 @@ void setupGame() {
 }
 
 int setupPlayers() {
-	int returnValue = promptInt("Welcome to t-risk! How many players are playing (2 - 6)? ");
-	while (returnValue < 2 || returnValue > 6) {
-		returnValue = promptInt("Error: the number of players must be between 2 and 6. How many players are playing? ");
+	int returnValue = promptInt("Welcome to t-risk! How many players are playing (3 - 6)? ");
+	while (returnValue < 3 || returnValue > 6) {
+		returnValue = promptInt("Error: the number of players must be between 3 and 6. How many players are playing? ");
 	}
 	return returnValue;
 }
