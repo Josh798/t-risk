@@ -41,4 +41,22 @@ void setupGame();
  */
 void nameAndNumberPlayers();
 
+/*
+ * Returns a pointer to the game itself.
+ */
 Game* getGame();
+
+/*
+ * Load the territories into the game.
+ */
+void initializeTerritories();
+
+/*
+ * Parses one element in a CSV file. Returns the offset needed to parse the next element, assuming such an element exists.
+ */
+int parseElement(char*, char*, int);
+
+/*
+ * Updates the count of troops in a territory. This updates the screen and the amount if troops in the game.
+ */
+void updateTroopCount(Territory*, int);

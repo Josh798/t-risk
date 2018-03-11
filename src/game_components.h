@@ -13,6 +13,9 @@ typedef struct region {
 } Region;
 
 typedef struct territory {
+	int xcoord;
+	int ycoord;
+	int id;
     char *name;
     struct player* controlledBy;
     int troopCount;
@@ -23,6 +26,7 @@ typedef struct territory {
 typedef struct game {
 	int numberOfPlayers;
 	Player* players;
+	Territory** territories;
 } Game;
 
 #endif
