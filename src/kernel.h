@@ -29,7 +29,7 @@ int promptInt(char*);
 /*
  * Prompt for and return the number of players playing the game.
  */
-int setupPlayers();
+void setupPlayers(Game*);
 
 /*
  * Gets the game ready to go.
@@ -49,7 +49,7 @@ Game* getGame();
 /*
  * Load the territories into the game.
  */
-void initializeTerritories();
+void initializeTerritories(Game*);
 
 /*
  * Parses one element in a CSV file. Returns the offset needed to parse the next element, assuming such an element exists.
@@ -62,6 +62,21 @@ int parseElement(char*, char*, int);
 void updateTroopCount(Territory*, int);
 
 /*
- * Updates the displayed troop count for the given territory on the map.
+ * Updates the displayed troop count and player symbol for the given territory on the map.
  */
 void refreshTroopCount(Territory*);
+
+/*
+ * Prompts each player to place their initial troops.
+ */
+void initialTroopPlacement(Game*);
+
+/*
+ * Print territory codes. (Note: this could have been hard-coded into the map, but this was easier.)
+ */
+void printTerritoryCodes(Game*);
+
+/*
+ * Print an empty box.
+ */
+void printBox();

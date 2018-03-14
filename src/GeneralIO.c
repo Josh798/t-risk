@@ -40,9 +40,15 @@ void refreshTroopCount(Territory* t) {
 	while (count > 0) {
 		bytesNeeded++;
 	}
+	// bytesNeeded tells the number of bytes needed to print the number alone.
+	// Note the expression "bytesNeeded + 2" The +2 is needed to account for \0 and the player symbol.
 	char* countStr = (char*) malloc(bytesNeeded + 1);
+	char* fullStr = (char*) malloc(bytesNeeded + 2);
+	*fullStr = t->controlledBy->symbol;
+	*(fullStr + 1) = '\0';
 	sprintf(countStr, "%d", t->troopCount);
-	mvaddstr(t->ycoord, t->xcoord, countStr);
+	strcat(fullStr, countStr);
+	mvaddstr(t->ycoord, (t->xcoord - 1), fullStr);
 	curs_set(0);
 	refresh();
 }

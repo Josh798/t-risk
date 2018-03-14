@@ -17,6 +17,7 @@ int main() {
     initscr();
     raw();
     printEmptyMap();
+    printBox();
 
     setupGame();
 

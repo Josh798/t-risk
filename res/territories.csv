@@ -1,42 +1,42 @@
-0,Alaska,4,10
-1,Northwest Territory,4,23
-2,Alberta,7,17
-3,Ontario,7,28
-4,Quebec,7,39
-5,Western US,11,15
-6,Eastern US,12,25
-7,Centeral America,16,17
-8,Greenland,2,57
-9,Venezuela,22,33
-10,Peru,26,31
-11,Brazil,26,41
-12,Argentina,33,36
-13,Iceland,4,65
-14,Great Britain,7,68
-15,Northern Europe,8,81
-16,Scandinavia,4,81
-17,Western Europe,11,67
-18,Southern Europe,12,86
-19,Russia,7,91
-20,North Africa,17,69
-21,Egypt,16,81
-22,East Africa,22,87
-23,South Africa,29,82
-24,Madagascar,28,93
-25,Congo,23,77
-26,Middle East,17,94
-27,Afghanistan,12,103
-28,India,16,110
-29,China,15,121
-30,Southeast Asia,18,122
-31,Mongolia,11,120
-32,Irkutsk,7,115
-33,Yakutsk,4,119
-34,Kamchatka,4,130
-35,Japan,14,137
-36,Ural,8,104
-37,Siberia,4,107
-38,Indonesia,23,129
-39,New Guinea,24,144
-40,Western Australia,30,133
-41,Eastern Australia,30,143
+0,Alaska,4,10,AK,0
+1,Northwest Territory,3,22,NT,0
+2,Alberta,6,17,AB,0
+3,Ontario,7,28,ON,0
+4,Quebec,7,39,QC,0
+5,Western US,11,15,WU,0
+6,Eastern US,12,25,EU,0
+7,Centeral America,16,17,CA,0
+8,Greenland,2,57,GL,0
+9,Venezuela,21,33,VE,1
+10,Peru,26,31,PE,1
+11,Brazil,26,41,BR,1
+12,Argentina,33,36,AR,1
+13,Iceland,4,65,IS,2
+14,Great Britain,7,68,GB,2
+15,Northern Europe,7,81,NE,2
+16,Scandinavia,3,81,SV,2
+17,Western Europe,11,67,WE,2
+18,Southern Europe,12,86,SE,2
+19,Russia,7,91,RU,2
+20,North Africa,17,69,NA,3
+21,Egypt,15,81,EG,3
+22,East Africa,22,87,EF,3
+23,South Africa,29,82,SF,3
+24,Madagascar,28,93,MG,3
+25,Congo,23,77,CG,3
+26,Middle East,17,94,ME,4
+27,Afghanistan,12,103,AF,4
+28,India,16,110,IA,4
+29,China,14,121,CH,4
+30,Southeast Asia,18,122,SA,4
+31,Mongolia,11,120,MN,4
+32,Irkutsk,7,115,IK,4
+33,Yakutsk,4,119,YK,4
+34,Kamchatka,4,130,KM,4
+35,Japan,14,138,JP,4
+36,Ural,8,104,UR,4
+37,Siberia,4,107,SB,4
+38,Indonesia,23,129,ID,5
+39,New Guinea,24,144,NG,5
+40,Western Australia,30,133,WA,5
+41,Eastern Australia,30,143,EA,5
